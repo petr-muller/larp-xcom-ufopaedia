@@ -1,0 +1,82 @@
+<div id="overfuck">
+
+<h1>HUMANPAEDIA</h1>
+<F6>
+<div id="nav-menu">
+  <ul>
+    {% for article in article_list %}
+    <li>
+    {% if article.subject.research %}
+      {% if article.researched %}
+        <img class="article-flag" src="/static/checked.png" />
+        {% else %}
+        <img class="article-flag" src="/static/research_icon.png" />
+      {% endif %}
+    {% else %}
+    <img class="article-flag" src="/static/article.png" />
+    {% endif %}
+
+    <a href="/category/{{ category.id }}/article/{{ article.id }}/">{{ article.caption }}</a>
+    {% if not article.read %}
+    <img class="article-flag" src="/static/unread.png" />
+    {% endif %}
+    </li>
+    {% endfor %}
+    <li>--- </li>
+    <li><a href="/">Nahoru</a></li>
+  </ul>
+</div>
+
+<div id="article-grouper">
+  <div id="article-texts">
+    <div id="article-header">
+      <table>
+        <tr>
+          <td>Kategorie:</td>
+          <td>{{article.subject.category.name}}</td>
+        </tr>
+        <tr>
+          <td>ID:</td>
+          <td>{{article.code}}</td>
+        </tr>
+        <tr>
+          <td>Název:</td>
+          <td>{{article.caption}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="article-text">
+      {% for par in article.split_to_paragraphs %}
+        <p>{{ par }}</p>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="article-image">
+    <img src="/static/{{article.image}}" />
+  </div>
+</div>
+
+{% if article.subject.research %}
+  <div id="article-research">
+    {% if not article.researched %}
+      {% if research_points %}
+        <form action="/research/" method="POST">
+          {% csrf_token %}
+          <div style='display:none'><input type='hidden' name='article' value='{{article.id}}' /></div>
+          <input type="submit" value="Vyzkoumat" />
+          <label><span style="color: #1d1;">(Výzkumných bodů: {{ research_points }})</span></label>
+        </form>
+
+      {% else %}
+        Nelze vyzkoumat <span style="color: #d11;">( {{ research_points }} výzkumných bodů )</span>
+      {% endif %}
+    {% else %}
+      Hotovo
+      {% endif %}
+  </div>
+{% endif %}
+
+</div>
+

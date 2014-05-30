@@ -1,0 +1,30 @@
+<div style="margin-top: 10%; margin-bottom: 3%;">
+HUMANPAEDIA
+</div>
+
+<form action="/unlock/" method="POST">
+{% csrf_token %}
+<input type="text" name="code" id="code" />
+<input type="submit" value="Zadej číslo mise" />
+</form>
+
+{% if rp_count > 0 %}
+!!! Research points: {{rp_count}} !!!
+{% endif %}
+
+<div class="expand-down">
+<ul>
+  {% for category in category_list %}
+    <li>
+      {% if category.empty %}
+        <img class="category-image" src="/static/grey-{{ category.category.image }}">
+        <span style="font-size: 30px">{{category.category.name}}</span>
+      {% else %}
+        <a href="/category/{{ category.category.id }}/"><img class="category-image" src="/static/{{ category.category.image }}" />
+        <span style="font-size: 30px">{{category.category.name}}</span>
+        </a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+</div>

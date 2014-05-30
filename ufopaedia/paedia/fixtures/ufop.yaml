@@ -1,0 +1,890 @@
+- model: paedia.Category
+  pk: 1
+  fields:
+    name: Documents
+    image: documents.png
+
+- model: paedia.Category
+  pk: 2
+  fields:
+    name: Enemies
+    image: enemies.png
+
+- model: paedia.Category
+  pk: 3
+  fields:
+    name: Equipment
+    image: equipment.png
+
+- model: paedia.Category
+  pk: 4
+  fields:
+    name: Groups
+    image: groups.png
+
+- model: paedia.Category
+  pk: 5
+  fields:
+    name: Locations
+    image: locations.png
+
+- model: paedia.Category
+  pk: 6
+  fields:
+    name: Personnel
+    image: personnel.png
+
+- model: paedia.Category
+  pk: 7
+  fields:
+    name: Research
+    image: research.png
+
+#-------------------------------
+- model: paedia.Subject
+  pk: 1
+  fields:
+    name: CONSPIRACY
+    research: 0
+    category: 1
+
+- model: paedia.Article
+  pk: 1
+  fields:
+    caption: Spiknutí v ET Corps
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-CONSPIRACY
+    subject: 1
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 2
+  fields:
+    name: EXPERIMENT
+    research: 0
+    category: 1
+
+- model: paedia.Article
+  pk: 2
+  fields:
+    caption: Pokusy na lidech
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-EXPERIMENT
+    subject: 2
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 3
+  fields:
+    name: KRISTALL
+    research: 0
+    category: 1
+
+- model: paedia.Article
+  pk: 3
+  fields:
+    caption: Kristallnacht
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-KRISTALL
+    subject: 3
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 4
+  fields:
+    name: HYBRID1
+    research: 0
+    category: 2
+
+- model: paedia.Article
+  pk: 4
+  fields:
+    caption: "Hybrid: Lebkoun"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-HYBRID1
+    subject: 4
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 5
+  fields:
+    name: HYBRID2
+    research: 0
+    category: 2
+
+- model: paedia.Article
+  pk: 5
+  fields:
+    caption: "Hybrid: Chapadloun"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-HYBRID2
+    subject: 5
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 6
+  fields:
+    name: HYBRID3
+    research: 0
+    category: 2
+
+- model: paedia.Article
+  pk: 6
+  fields:
+    caption: "Hybrid: Krab"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-HYBRID3
+    subject: 6
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 7
+  fields:
+    name: EMP
+    research: 0
+    category: 3
+
+- model: paedia.Article
+  pk: 7
+  fields:
+    caption: "EMP Nálož"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-EMP
+    subject: 7
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 8
+  fields:
+    name: NERF
+    research: 0
+    category: 3
+
+- model: paedia.Article
+  pk: 8
+  fields:
+    caption: "Paralyzační pistole"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-NERF
+    subject: 8
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 9
+  fields:
+    name: GAUNTLET
+    research: 0
+    category: 4
+
+- model: paedia.Article
+  pk: 9
+  fields:
+    caption: "Gauntlet"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-GAUNTLET
+    subject: 9
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 10
+  fields:
+    name: SETSRT
+    research: 0
+    category: 4
+
+- model: paedia.Article
+  pk: 10
+  fields:
+    caption: "SETSRT"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-SETSRT
+    subject: 10
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 11
+  fields:
+    name: SVN
+    research: 0
+    category: 4
+
+- model: paedia.Article
+  pk: 11
+  fields:
+    caption: "Svědkové návratu"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-SVN
+    subject: 11
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 12
+  fields:
+    name: XCOM
+    research: 0
+    category: 4
+
+- model: paedia.Article
+  pk: 12
+  fields:
+    caption: "X-COM"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-XCOM
+    subject: 12
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 14
+  fields:
+    name: BUKUREST
+    research: 0
+    category: 1
+
+- model: paedia.Article
+  pk: 14
+  fields:
+    caption: "Bukurešť (report)"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-BUKUREST
+    subject: 14
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 15
+  fields:
+    name: FIRSTCONTACT
+    research: 0
+    category: 1
+
+- model: paedia.Article
+  pk: 15
+  fields:
+    caption: "First Contact"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-FIRSTCONTACT
+    subject: 15
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 16
+  fields:
+    name: BASE
+    research: 0
+    category: 5
+
+- model: paedia.Article
+  pk: 16
+  fields:
+    caption: "Základna X-COM"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-BASE
+    subject: 16
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 17
+  fields:
+    name: LOCDH
+    research: 0
+    category: 5
+
+- model: paedia.Article
+  pk: 17
+  fields:
+    caption: "Ďáblův hřeben"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-LOCDH
+    subject: 17
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 18
+  fields:
+    name: ZRIDLO
+    research: 0
+    category: 5
+
+- model: paedia.Article
+  pk: 18
+  fields:
+    caption: "Zřídlo"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-ZRIDLO
+    subject: 18
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 19
+  fields:
+    name: CHARLIE1
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 19
+  fields:
+    caption: "F. I. Godorovsky"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-CHARLIE1
+    subject: 19
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 20
+  fields:
+    name: CHARLIE2
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 20
+  fields:
+    caption: "P. Tobermann"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-CHARLIE2
+    subject: 20
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 21
+  fields:
+    name: CHARLIE3
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 21
+  fields:
+    caption: "J. Johnson"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-CHARLIE3
+    subject: 21
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 22
+  fields:
+    name: CHARLIE4
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 22
+  fields:
+    caption: "P. Cornioley"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-CHARLIE4
+    subject: 22
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 23
+  fields:
+    name: CHARLIE5
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 23
+  fields:
+    caption: "P. Chattam"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-CHARLIE5
+    subject: 23
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 24
+  fields:
+    name: CHARLIE6
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 24
+  fields:
+    caption: "A. Hollberg"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-CHARLIE6
+    subject: 24
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 25
+  fields:
+    name: CHARLIE7
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 25
+  fields:
+    caption: "G. von Kirchbach"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-CHARLIE7
+    subject: 25
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 27
+  fields:
+    name: CHARLIE8
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 27
+  fields:
+    caption: "N. Sorel"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-CHARLIE8
+    subject: 27
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 28
+  fields:
+    name: DT
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 28
+  fields:
+    caption: "K. Stepankova"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-DT
+    subject: 28
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 29
+  fields:
+    name: LARSSON
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 29
+  fields:
+    caption: "S. Larsson"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-LARSSON
+    subject: 29
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 30
+  fields:
+    name: ALPHA1
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 30
+  fields:
+    caption: "T. Kopecek"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-ALPHA1
+    subject: 30
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 31
+  fields:
+    name: ALPHA2
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 31
+  fields:
+    caption: "J. Kacer"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-ALPHA2
+    subject: 31
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 32
+  fields:
+    name: ALPHA3
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 32
+  fields:
+    caption: "M. Kovar"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-ALPHA3
+    subject: 32
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 33
+  fields:
+    name: ALPHA4
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 33
+  fields:
+    caption: "V. Tomala"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-ALPHA4
+    subject: 33
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 34
+  fields:
+    name: ALPHA5
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 34
+  fields:
+    caption: "T. Cermanova"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-ALPHA5
+    subject: 34
+    level: 0
+    researched: 0
+    read: 0
+#-------------------------------
+- model: paedia.Subject
+  pk: 35
+  fields:
+    name: ALPHA6
+    research: 0
+    category: 6
+
+- model: paedia.Article
+  pk: 35
+  fields:
+    caption: "R. Waschka"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-ALPHA6
+    subject: 35
+    level: 0
+    researched: 0
+    read: 0
+
+- model: paedia.Subject
+  pk: 36
+  fields:
+    name: MEDIC
+    research: 1
+    category: 7
+
+- model: paedia.Subject
+  pk: 37
+  fields:
+    name: RIFLE
+    research: 1
+    category: 7
+
+- model: paedia.Subject
+  pk: 38
+  fields:
+    name: TACTIC
+    research: 1
+    category: 7
+
+- model: paedia.Article
+  pk: 36
+  fields:
+    caption: "Medic 1"
+    unlocked: 1
+    image: ""
+    text: ""
+    code: UP-RESEARCH-M1
+    subject: 36
+    level: 0
+    researched: 0
+    read: 0
+
+- model: paedia.Article
+  pk: 37
+  fields:
+    caption: "Rifle 1"
+    unlocked: 1
+    image: ""
+    text: ""
+    code: UP-RESEARCH-R1
+    subject: 37
+    level: 0
+    researched: 0
+    read: 0
+
+- model: paedia.Article
+  pk: 38
+  fields:
+    caption: "Tactic 1"
+    unlocked: 1
+    image: ""
+    text: ""
+    code: UP-RESEARCH-T1
+    subject: 38
+    level: 0
+    researched: 0
+    read: 0
+
+#-----------------------
+- model: paedia.Article
+  pk: 39
+  fields:
+    caption: "Medic 2"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-RESEARCH-M2
+    subject: 36
+    level: 1
+    researched: 0
+    read: 0
+
+- model: paedia.Article
+  pk: 40
+  fields:
+    caption: "Rifle 2"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-RESEARCH-R2
+    subject: 37
+    level: 1
+    researched: 0
+    read: 0
+
+- model: paedia.Article
+  pk: 41
+  fields:
+    caption: "Tactic 2"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-RESEARCH-T2
+    subject: 38
+    level: 1
+    researched: 0
+    read: 0
+#-----------------------
+- model: paedia.Article
+  pk: 42
+  fields:
+    caption: "Medic 3"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-RESEARCH-M3
+    subject: 36
+    level: 2
+    researched: 0
+    read: 0
+
+- model: paedia.Article
+  pk: 43
+  fields:
+    caption: "Rifle 3"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-RESEARCH-R3
+    subject: 37
+    level: 2
+    researched: 0
+    read: 0
+
+- model: paedia.Article
+  pk: 44
+  fields:
+    caption: "Tactic 3"
+    unlocked: 0
+    image: ""
+    text: ""
+    code: UP-RESEARCH-T3
+    subject: 38
+    level: 2
+    researched: 0
+
+- model: paedia.ResearchPoint
+  pk: 1
+  fields:
+    token: 1
+    code: UP-RESEARCH-TurinG
+    enabled: 0
+    spent: 0
+- model: paedia.ResearchPoint
+  pk: 2
+  fields:
+    token: 2
+    code: UP-RESEARCH-GoeDel
+    enabled: 0
+    spent: 0
+- model: paedia.ResearchPoint
+  pk: 3
+  fields:
+    token: 3
+    code: UP-RESEARCH-TonyHoaRe
+    enabled: 0
+    spent: 0
+- model: paedia.ResearchPoint
+  pk: 4
+  fields:
+    token: 4
+    code: UP-RESEARCH-Muld3r
+    enabled: 0
+    spent: 0
+- model: paedia.ResearchPoint
+  pk: 5
+  fields:
+    token: 5
+    code: UP-RESEARCH-kNUTh
+    enabled: 0
+    spent: 0
+- model: paedia.ResearchPoint
+  pk: 6
+  fields:
+    token: 6
+    code: UP-RESEARCH-ScuLLY
+    enabled: 0
+    spent: 0
+- model: paedia.ResearchPoint
+  pk: 7
+  fields:
+    token: 7
+    code: UP-RESEARCH-TaRjaN
+    enabled: 0
+    spent: 0
